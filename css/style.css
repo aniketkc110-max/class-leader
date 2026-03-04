@@ -141,7 +141,7 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 28px 24px 22px;
-  width: 160px;
+  width: 185px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,6 +208,41 @@ body {
 .teal-badge   { background: #d4f5ef; color: #00695c; }
 .red-badge    { background: #fde8e8; color: #b71c1c; }
 .yellow-badge { background: #fff8e1; color: #e65100; }
+
+/* ===== SECTION HEADER ===== */
+.section-header {
+  margin-bottom: 28px;
+}
+
+/* ===== CARD IMAGE (emoji icon) ===== */
+.card-img {
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-bottom: 2px;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+/* ===== CARD WORK SENTENCE ===== */
+.card-work {
+  font-size: 0.78rem;
+  color: #888;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 4px;
+  padding: 0 4px;
+}
+
+/* ===== FOOTER-SUB ===== */
+.footer-sub {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  opacity: 0.85;
+}
 
 /* ===== FOOTER ===== */
 .footer {
