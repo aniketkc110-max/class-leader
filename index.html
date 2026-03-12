@@ -9,63 +9,50 @@
 </head>
 <body>
 
-  <!-- FLOATING BUBBLES BACKGROUND -->
-  <div class="bubbles">
-    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
-    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
-    <div class="bubble"></div><div class="bubble"></div>
-  </div>
+  <!-- PARTICLES -->
+  <div class="particles" id="particles"></div>
 
   <!-- ======== HERO ======== -->
   <header class="hero">
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+    <div class="hero-glow g3"></div>
     <div class="hero-content">
-      <div class="hero-badge">✨ Class Presentation</div>
+      <div class="hero-badge">🏫 Class Presentation</div>
       <h1 class="hero-title">Our Class Journey</h1>
-      <p class="hero-desc">
-        Every student in our class has an important role to play.<br>
-        Together, we make our class the best it can be! 🌟
-      </p>
+      <p class="hero-desc">Every student has a role. Every role matters.<br>Together we make our class the best! 🌟</p>
       <div class="hero-stats">
-        <div class="stat"><span>9</span><small>Teams</small></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span>20+</span><small>Students</small></div>
-        <div class="stat-divider"></div>
+        <div class="stat"><span>10</span><small>Teams</small></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span>25+</span><small>Students</small></div>
+        <div class="stat-div"></div>
         <div class="stat"><span>1</span><small>Amazing Class</small></div>
       </div>
     </div>
     <div class="hero-wave">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0,64 C360,120 1080,0 1440,80 L1440,120 L0,120 Z" fill="#f8f6ff"/>
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0,40 C300,100 900,0 1440,60 L1440,100 L0,100 Z" fill="#f8f6ff"/>
       </svg>
     </div>
   </header>
 
-  <!-- ======== MAIN ======== -->
   <main class="container">
 
     <!-- 1. CLASS LEADERS -->
     <section class="section">
       <div class="sec-head">
-        <div class="sec-icon-wrap" style="--ic:#6c63ff;">👑</div>
-        <h2 class="sec-title" style="color:#6c63ff;">Class Leaders</h2>
-        <p class="sec-desc">They lead our class with confidence and responsibility. Every decision, every step — they guide us forward and represent our class to the teacher.</p>
+        <div class="sec-icon" style="--c:#6c63ff;">👑</div>
+        <h2 style="color:#6c63ff;">Class Leaders</h2>
+        <p>They lead our class with confidence and responsibility. Every decision, every step — they guide us forward and represent our class to the teacher.</p>
       </div>
       <div class="cards">
-        <div class="card" style="--top:linear-gradient(135deg,#6c63ff,#a78bfa);--badge-bg:#ede9ff;--badge-fg:#6c63ff;">
-          <div class="card-top"><div class="card-emoji">🦁</div><div class="card-av">A</div></div>
-          <div class="card-body">
-            <h3>Aniket</h3>
-            <span class="badge">Leader</span>
-            <p class="work">Manages class discipline and takes important decisions for the whole class.</p>
-          </div>
+        <div class="card" style="--g:linear-gradient(135deg,#6c63ff,#a78bfa);--bb:#ede9ff;--bf:#6c63ff;">
+          <div class="ctop"><div class="cemoji">🦁</div><div class="cav">A</div></div>
+          <div class="cbody"><h3>Aniket</h3><span class="badge">Leader</span><p class="work">Manages class discipline and takes important decisions for the whole class.</p></div>
         </div>
-        <div class="card" style="--top:linear-gradient(135deg,#6c63ff,#a78bfa);--badge-bg:#ede9ff;--badge-fg:#6c63ff;">
-          <div class="card-top"><div class="card-emoji">🦁</div><div class="card-av">V</div></div>
-          <div class="card-body">
-            <h3>Vipal</h3>
-            <span class="badge">Leader</span>
-            <p class="work">Supports the leader and helps to organise all class activities smoothly.</p>
-          </div>
+        <div class="card" style="--g:linear-gradient(135deg,#6c63ff,#a78bfa);--bb:#ede9ff;--bf:#6c63ff;">
+          <div class="ctop"><div class="cemoji">🦁</div><div class="cav">V</div></div>
+          <div class="cbody"><h3>Vipal</h3><span class="badge">Leader</span><p class="work">Supports the leader and helps to organise all class activities smoothly.</p></div>
         </div>
       </div>
     </section>
@@ -73,26 +60,18 @@
     <!-- 2. CLASS MONITOR -->
     <section class="section">
       <div class="sec-head">
-        <div class="sec-icon-wrap" style="--ic:#1a7a4a;">📋</div>
-        <h2 class="sec-title" style="color:#1a7a4a;">Class Monitor</h2>
-        <p class="sec-desc">Our monitors keep the class calm and orderly. When the teacher is away, they make sure everyone is on their best behaviour and the class runs smoothly.</p>
+        <div class="sec-icon" style="--c:#1a7a4a;">📋</div>
+        <h2 style="color:#1a7a4a;">Class Monitor</h2>
+        <p>Our monitor keeps the class calm and orderly. When the teacher is away, they make sure everyone is on their best behaviour!</p>
       </div>
       <div class="cards">
-        <div class="card" style="--top:linear-gradient(135deg,#43e97b,#38f9d7);--badge-bg:#d4fbe8;--badge-fg:#1a7a4a;">
-          <div class="card-top"><div class="card-emoji">🛡️</div><div class="card-av">R</div></div>
-          <div class="card-body">
-            <h3>Rudra</h3>
-            <span class="badge">Monitor</span>
-            <p class="work">Maintains silence and order in the classroom at all times.</p>
-          </div>
+        <div class="card" style="--g:linear-gradient(135deg,#43e97b,#38f9d7);--bb:#d4fbe8;--bf:#1a7a4a;">
+          <div class="ctop"><div class="cemoji">🛡️</div><div class="cav">D</div></div>
+          <div class="cbody"><h3>Dhairya</h3><span class="badge">Monitor</span><p class="work">Maintains silence and order in the classroom and reports to the teacher.</p></div>
         </div>
-        <div class="card" style="--top:linear-gradient(135deg,#43e97b,#38f9d7);--badge-bg:#d4fbe8;--badge-fg:#1a7a4a;">
-          <div class="card-top"><div class="card-emoji">🛡️</div><div class="card-av">P</div></div>
-          <div class="card-body">
-            <h3>Prerna</h3>
-            <span class="badge">Monitor</span>
-            <p class="work">Keeps attendance records and reports important matters to the teacher.</p>
-          </div>
+        <div class="card" style="--g:linear-gradient(135deg,#43e97b,#38f9d7);--bb:#d4fbe8;--bf:#1a7a4a;">
+          <div class="ctop"><div class="cemoji">🛡️</div><div class="cav">P</div></div>
+          <div class="cbody"><h3>Prerna</h3><span class="badge">Monitor</span><p class="work">Keeps attendance records and handles important class responsibilities.</p></div>
         </div>
       </div>
     </section>
@@ -100,26 +79,38 @@
     <!-- 3. SOFT BOARD -->
     <section class="section">
       <div class="sec-head">
-        <div class="sec-icon-wrap" style="--ic:#c0395a;">📌</div>
-        <h2 class="sec-title" style="color:#c0395a;">Soft Board Team</h2>
-        <p class="sec-desc">They make our class look beautiful! They decorate and update the soft board with colourful, creative displays every single week.</p>
+        <div class="sec-icon" style="--c:#c0395a;">📌</div>
+        <h2 style="color:#c0395a;">Soft Board Team</h2>
+        <p>They make our class look beautiful! They decorate and update the soft board with colourful and creative displays every single week.</p>
       </div>
+
+      <!-- Leaders -->
+      <div class="sub-label">👥 Soft Board Leaders (Boys)</div>
       <div class="cards">
-        <div class="card" style="--top:linear-gradient(135deg,#ff6584,#ffb3c1);--badge-bg:#ffe4ea;--badge-fg:#c0395a;">
-          <div class="card-top"><div class="card-emoji">🎨</div><div class="card-av">D</div></div>
-          <div class="card-body"><h3>Dhruv</h3><span class="badge">Soft Board</span><p class="work">Designs and pins important notices and artwork on the soft board.</p></div>
+        <div class="card leader-star" style="--g:linear-gradient(135deg,#ff6584,#ff9a9e);--bb:#ffe4ea;--bf:#c0395a;">
+          <div class="ctop"><div class="cemoji">🎨</div><div class="cav">D</div></div>
+          <div class="cbody"><h3>Dhruv</h3><span class="badge">SB Leader</span><p class="work">Leads the soft board team and decides the design theme each week.</p></div>
         </div>
-        <div class="card" style="--top:linear-gradient(135deg,#ff6584,#ffb3c1);--badge-bg:#ffe4ea;--badge-fg:#c0395a;">
-          <div class="card-top"><div class="card-emoji">🎨</div><div class="card-av">M</div></div>
-          <div class="card-body"><h3>Megh</h3><span class="badge">Soft Board</span><p class="work">Cuts, colours, and decorates the soft board display every week.</p></div>
+        <div class="card leader-star" style="--g:linear-gradient(135deg,#ff6584,#ff9a9e);--bb:#ffe4ea;--bf:#c0395a;">
+          <div class="ctop"><div class="cemoji">🎨</div><div class="cav">M</div></div>
+          <div class="cbody"><h3>Megh</h3><span class="badge">SB Leader</span><p class="work">Co-leads the team and supervises the decoration of the soft board.</p></div>
         </div>
-        <div class="card" style="--top:linear-gradient(135deg,#ff6584,#ffb3c1);--badge-bg:#ffe4ea;--badge-fg:#c0395a;">
-          <div class="card-top"><div class="card-emoji">🎨</div><div class="card-av">D</div></div>
-          <div class="card-body"><h3>Devsree</h3><span class="badge">Soft Board</span><p class="work">Writes neatly on display cards and arranges them attractively.</p></div>
+      </div>
+
+      <!-- Helpers -->
+      <div class="sub-label" style="margin-top:20px;">🤝 Helping Members</div>
+      <div class="cards">
+        <div class="card" style="--g:linear-gradient(135deg,#ffb3c1,#ffd6e0);--bb:#fff0f3;--bf:#c0395a;">
+          <div class="ctop"><div class="cemoji">✂️</div><div class="cav">D</div></div>
+          <div class="cbody"><h3>Darsh</h3><span class="badge">Helper</span><p class="work">Cuts and prepares art materials for the soft board display.</p></div>
         </div>
-        <div class="card" style="--top:linear-gradient(135deg,#ff6584,#ffb3c1);--badge-bg:#ffe4ea;--badge-fg:#c0395a;">
-          <div class="card-top"><div class="card-emoji">🎨</div><div class="card-av">J</div></div>
-          <div class="card-body"><h3>Janki</h3><span class="badge">Soft Board</span><p class="work">Keeps the soft board clean and updates it with new content regularly.</p></div>
+        <div class="card" style="--g:linear-gradient(135deg,#ffb3c1,#ffd6e0);--bb:#fff0f3;--bf:#c0395a;">
+          <div class="ctop"><div class="cemoji">✂️</div><div class="cav">J</div></div>
+          <div class="cbody"><h3>Jayprit</h3><span class="badge">Helper</span><p class="work">Helps with colouring and sticking items on the soft board.</p></div>
+        </div>
+        <div class="card" style="--g:linear-gradient(135deg,#ffb3c1,#ffd6e0);--bb:#fff0f3;--bf:#c0395a;">
+          <div class="ctop"><div class="cemoji">✂️</div><div class="cav">S</div></div>
+          <div class="cbody"><h3>Shourya</h3><span class="badge">Helper</span><p class="work">Writes neatly on display cards and arranges them attractively.</p></div>
         </div>
       </div>
     </section>
@@ -127,14 +118,18 @@
     <!-- 4. WHITE BOARD -->
     <section class="section">
       <div class="sec-head">
-        <div class="sec-icon-wrap" style="--ic:#1565c0;">🖊️</div>
-        <h2 class="sec-title" style="color:#1565c0;">White Board Team</h2>
-        <p class="sec-desc">A clean board means better learning! They erase and clean the whiteboard after every lesson so the class is always ready to learn.</p>
+        <div class="sec-icon" style="--c:#1565c0;">🖊️</div>
+        <h2 style="color:#1565c0;">White Board Team</h2>
+        <p>A clean board means better learning! They erase and clean the whiteboard after every lesson so the class is always ready.</p>
       </div>
       <div class="cards">
-        <div class="card" style="--top:linear-gradient(135deg,#4facfe,#00f2fe);--badge-bg:#dff0ff;--badge-fg:#1565c0;">
-          <div class="card-top"><div class="card-emoji">✏️</div><div class="card-av">N</div></div>
-          <div class="card-body"><h3>Nishant</h3><span class="badge">White Board</span><p class="work">Erases the whiteboard after each lesson and keeps markers organised.</p></div>
+        <div class="card" style="--g:linear-gradient(135deg,#4facfe,#00f2fe);--bb:#dff0ff;--bf:#1565c0;">
+          <div class="ctop"><div class="cemoji">✏️</div><div class="cav">N</div></div>
+          <div class="cbody"><h3>Nirmal</h3><span class="badge">White Board</span><p class="work">Erases the whiteboard after each lesson and keeps markers organised.</p></div>
+        </div>
+        <div class="card" style="--g:linear-gradient(135deg,#4facfe,#00f2fe);--bb:#dff0ff;--bf:#1565c0;">
+          <div class="ctop"><div class="cemoji">✏️</div><div class="cav">D</div></div>
+          <div class="cbody"><h3>Dharm</h3><span class="badge">White Board</span><p class="work">Cleans the board thoroughly and replaces markers when they run out.</p></div>
         </div>
       </div>
     </section>
@@ -142,14 +137,18 @@
     <!-- 5. SUVICHAR LEKHAN -->
     <section class="section">
       <div class="sec-head">
-        <div class="sec-icon-wrap" style="--ic:#b06000;">🌟</div>
-        <h2 class="sec-title" style="color:#b06000;">Suvichar Lekhan</h2>
-        <p class="sec-desc">Every great day starts with a great thought! They write an inspiring quote on the board every morning to motivate and uplift the whole class.</p>
+        <div class="sec-icon" style="--c:#b06000;">🌟</div>
+        <h2 style="color:#b06000;">Suvichar Lekhan</h2>
+        <p>Every great day starts with a great thought! They write an inspiring quote on the board every morning to motivate the whole class.</p>
       </div>
       <div class="cards">
-        <div class="card" style="--top:linear-gradient(135deg,#f7971e,#ffd200);--badge-bg:#fff3d4;--badge-fg:#b06000;">
-          <div class="card-top"><div class="card-emoji">💬</div><div class="card-av">T</div></div>
-          <div class="card-body"><h3>Tirtha</h3><span class="badge">Suvichar</span><p class="work">Writes a daily motivational quote or thought on the board every morning.</p></div>
+        <div class="card" style="--g:linear-gradient(135deg,#f7971e,#ffd200);--bb:#fff3d4;--bf:#b06000;">
+          <div class="ctop"><div class="cemoji">💬</div><div class="cav">O</div></div>
+          <div class="cbody"><h3>Om. B</h3><span class="badge">Suvichar</span><p class="work">Writes a daily motivational quote or thought on the board every morning.</p></div>
+        </div>
+        <div class="card" style="--g:linear-gradient(135deg,#f7971e,#ffd200);--bb:#fff3d4;--bf:#b06000;">
+          <div class="ctop"><div class="cemoji">💬</div><div class="cav">S</div></div>
+          <div class="cbody"><h3>Shivansh</h3><span class="badge">Suvichar</span><p class="work">Selects inspiring thoughts and presents them beautifully each morning.</p></div>
         </div>
       </div>
     </section>
@@ -157,37 +156,33 @@
     <!-- 6. AV TEAM -->
     <section class="section">
       <div class="sec-head">
-        <div class="sec-icon-wrap" style="--ic:#7b1fa2;">🎥</div>
-        <h2 class="sec-title" style="color:#7b1fa2;">AV Team</h2>
-        <p class="sec-desc">They set up the projector, screen, and speakers so that every lesson is seen and heard clearly by the whole class!</p>
+        <div class="sec-icon" style="--c:#7b1fa2;">🎥</div>
+        <h2 style="color:#7b1fa2;">AV Team</h2>
+        <p>They set up the projector, screen, and speakers so that every lesson is seen and heard clearly by the whole class!</p>
       </div>
       <div class="cards">
-        <div class="card" style="--top:linear-gradient(135deg,#a18cd1,#fbc2eb);--badge-bg:#f3e5f5;--badge-fg:#7b1fa2;">
-          <div class="card-top"><div class="card-emoji">🎬</div><div class="card-av">D</div></div>
-          <div class="card-body"><h3>Dhairya</h3><span class="badge">AV Team</span><p class="work">Sets up the projector and screen before every audio-visual session.</p></div>
-        </div>
-        <div class="card" style="--top:linear-gradient(135deg,#a18cd1,#fbc2eb);--badge-bg:#f3e5f5;--badge-fg:#7b1fa2;">
-          <div class="card-top"><div class="card-emoji">🎬</div><div class="card-av">H</div></div>
-          <div class="card-body"><h3>Hardik</h3><span class="badge">AV Team</span><p class="work">Manages the speaker and ensures all AV equipment works properly.</p></div>
+        <div class="card" style="--g:linear-gradient(135deg,#a18cd1,#fbc2eb);--bb:#f3e5f5;--bf:#7b1fa2;">
+          <div class="ctop"><div class="cemoji">🎬</div><div class="cav">H</div></div>
+          <div class="cbody"><h3>Hardik</h3><span class="badge">AV Team</span><p class="work">Sets up the projector, screen, and speaker before every audio-visual session.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- 7. KABORD -->
+    <!-- 7. CUPBOARD TEAM -->
     <section class="section">
       <div class="sec-head">
-        <div class="sec-icon-wrap" style="--ic:#00695c;">🗂️</div>
-        <h2 class="sec-title" style="color:#00695c;">Cupboard Team</h2>
-        <p class="sec-desc">They keep our classroom cupboard neat and organised — every book and file always in the right place so nothing is ever lost!</p>
+        <div class="sec-icon" style="--c:#00695c;">🗂️</div>
+        <h2 style="color:#00695c;">Cupboard Team</h2>
+        <p>They keep our classroom cupboard neat and organised — every book and file always in the right place so nothing is ever lost!</p>
       </div>
       <div class="cards">
-        <div class="card" style="--top:linear-gradient(135deg,#11998e,#38ef7d);--badge-bg:#d4f5ef;--badge-fg:#00695c;">
-          <div class="card-top"><div class="card-emoji">📦</div><div class="card-av">S</div></div>
-          <div class="card-body"><h3>Suhani</h3><span class="badge">Cupboard</span><p class="work">Organises books and materials inside the cupboard systematically.</p></div>
+        <div class="card" style="--g:linear-gradient(135deg,#11998e,#38ef7d);--bb:#d4f5ef;--bf:#00695c;">
+          <div class="ctop"><div class="cemoji">📦</div><div class="cav">N</div></div>
+          <div class="cbody"><h3>Nishant</h3><span class="badge">Cupboard</span><p class="work">Organises books and materials inside the cupboard systematically.</p></div>
         </div>
-        <div class="card" style="--top:linear-gradient(135deg,#11998e,#38ef7d);--badge-bg:#d4f5ef;--badge-fg:#00695c;">
-          <div class="card-top"><div class="card-emoji">📦</div><div class="card-av">R</div></div>
-          <div class="card-body"><h3>Rajvi</h3><span class="badge">Cupboard</span><p class="work">Keeps the cupboard locked and distributes items when needed by the class.</p></div>
+        <div class="card" style="--g:linear-gradient(135deg,#11998e,#38ef7d);--bb:#d4f5ef;--bf:#00695c;">
+          <div class="ctop"><div class="cemoji">📦</div><div class="cav">K</div></div>
+          <div class="cbody"><h3>Krushan</h3><span class="badge">Cupboard</span><p class="work">Keeps the cupboard locked and distributes items when needed by the class.</p></div>
         </div>
       </div>
     </section>
@@ -195,45 +190,37 @@
     <!-- 8. LINKBOOK CHECKING -->
     <section class="section">
       <div class="sec-head">
-        <div class="sec-icon-wrap" style="--ic:#b71c1c;">📚</div>
-        <h2 class="sec-title" style="color:#b71c1c;">Linkbook Checking</h2>
-        <p class="sec-desc">They make sure every student's linkbook is filled, signed by parents, and submitted on time — no one is ever missed!</p>
+        <div class="sec-icon" style="--c:#b71c1c;">📚</div>
+        <h2 style="color:#b71c1c;">Linkbook Checking</h2>
+        <p>They make sure every student's linkbook is filled, signed by parents, and submitted on time — no one is ever missed!</p>
       </div>
       <div class="cards">
-        <div class="card" style="--top:linear-gradient(135deg,#f85032,#e73827);--badge-bg:#fde8e8;--badge-fg:#b71c1c;">
-          <div class="card-top"><div class="card-emoji">📖</div><div class="card-av">O</div></div>
-          <div class="card-body"><h3>Om Chhatrola</h3><span class="badge">Linkbook</span><p class="work">Collects and checks linkbooks every morning before class starts.</p></div>
+        <div class="card" style="--g:linear-gradient(135deg,#f85032,#e73827);--bb:#fde8e8;--bf:#b71c1c;">
+          <div class="ctop"><div class="cemoji">📖</div><div class="cav">R</div></div>
+          <div class="cbody"><h3>Rudra</h3><span class="badge">Linkbook</span><p class="work">Collects and checks linkbooks every morning before class starts.</p></div>
         </div>
-        <div class="card" style="--top:linear-gradient(135deg,#f85032,#e73827);--badge-bg:#fde8e8;--badge-fg:#b71c1c;">
-          <div class="card-top"><div class="card-emoji">📖</div><div class="card-av">J</div></div>
-          <div class="card-body"><h3>Jemil</h3><span class="badge">Linkbook</span><p class="work">Reminds students to get their linkbooks signed by parents every day.</p></div>
-        </div>
-        <div class="card" style="--top:linear-gradient(135deg,#f85032,#e73827);--badge-bg:#fde8e8;--badge-fg:#b71c1c;">
-          <div class="card-top"><div class="card-emoji">📖</div><div class="card-av">K</div></div>
-          <div class="card-body"><h3>Kashvi</h3><span class="badge">Linkbook</span><p class="work">Notes down names of students who have not submitted their linkbooks.</p></div>
-        </div>
-        <div class="card" style="--top:linear-gradient(135deg,#f85032,#e73827);--badge-bg:#fde8e8;--badge-fg:#b71c1c;">
-          <div class="card-top"><div class="card-emoji">📖</div><div class="card-av">P</div></div>
-          <div class="card-body"><h3>Prachi</h3><span class="badge">Linkbook</span><p class="work">Submits the final linkbook report to the class teacher every day.</p></div>
+        <div class="card" style="--g:linear-gradient(135deg,#f85032,#e73827);--bb:#fde8e8;--bf:#b71c1c;">
+          <div class="ctop"><div class="cemoji">📖</div><div class="cav">J</div></div>
+          <div class="cbody"><h3>Jemil</h3><span class="badge">Linkbook</span><p class="work">Reminds students to get their linkbooks signed by parents every day.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- 9. LUNCH BOX -->
+    <!-- 9. NASTA CHECKING -->
     <section class="section">
       <div class="sec-head">
-        <div class="sec-icon-wrap" style="--ic:#e65100;">🍱</div>
-        <h2 class="sec-title" style="color:#e65100;">Lunch Box Team</h2>
-        <p class="sec-desc">They handle everyone's lunch boxes with care and love — because food makes everyone happy and nothing should ever get lost!</p>
+        <div class="sec-icon" style="--c:#e65100;">🍱</div>
+        <h2 style="color:#e65100;">Nasta Checking</h2>
+        <p>They check everyone's snack boxes to make sure students bring healthy and proper snacks to school every day!</p>
       </div>
       <div class="cards">
-        <div class="card" style="--top:linear-gradient(135deg,#f6d365,#fda085);--badge-bg:#fff8e1;--badge-fg:#e65100;">
-          <div class="card-top"><div class="card-emoji">🥗</div><div class="card-av">M</div></div>
-          <div class="card-body"><h3>Mitesh</h3><span class="badge">Lunch Box</span><p class="work">Collects and arranges lunch boxes neatly during the lunch break.</p></div>
+        <div class="card" style="--g:linear-gradient(135deg,#f6d365,#fda085);--bb:#fff8e1;--bf:#e65100;">
+          <div class="ctop"><div class="cemoji">🥗</div><div class="cav">O</div></div>
+          <div class="cbody"><h3>Om. C</h3><span class="badge">Nasta</span><p class="work">Checks snack boxes and ensures students bring healthy food to school.</p></div>
         </div>
-        <div class="card" style="--top:linear-gradient(135deg,#f6d365,#fda085);--badge-bg:#fff8e1;--badge-fg:#e65100;">
-          <div class="card-top"><div class="card-emoji">🥗</div><div class="card-av">H</div></div>
-          <div class="card-body"><h3>Hardi</h3><span class="badge">Lunch Box</span><p class="work">Returns lunch boxes to the right students after the lunch break ends.</p></div>
+        <div class="card" style="--g:linear-gradient(135deg,#f6d365,#fda085);--bb:#fff8e1;--bf:#e65100;">
+          <div class="ctop"><div class="cemoji">🥗</div><div class="cav">M</div></div>
+          <div class="cbody"><h3>Mitesh</h3><span class="badge">Nasta</span><p class="work">Records and reports students who do not follow the snack guidelines.</p></div>
         </div>
       </div>
     </section>
@@ -242,6 +229,7 @@
 
   <!-- ======== FOOTER ======== -->
   <footer class="footer">
+    <div class="footer-glow"></div>
     <div class="footer-inner">
       <div class="footer-emoji">🌈</div>
       <h2>Together We Learn, Together We Grow</h2>
@@ -251,30 +239,39 @@
   </footer>
 
   <script>
-    // Scroll reveal
-    const sections = document.querySelectorAll('.section');
-    const io = new IntersectionObserver(entries => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('visible'), i * 60);
-        }
-      });
-    }, { threshold: 0.07 });
-    sections.forEach(s => io.observe(s));
+    // ---- Particle Generator ----
+    const container = document.getElementById('particles');
+    for (let i = 0; i < 28; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.cssText = `
+        left:${Math.random()*100}%;
+        width:${6+Math.random()*10}px;
+        height:${6+Math.random()*10}px;
+        animation-duration:${8+Math.random()*14}s;
+        animation-delay:${Math.random()*10}s;
+        opacity:${0.1+Math.random()*0.2};
+        background:hsl(${Math.random()*360},80%,70%);
+      `;
+      container.appendChild(p);
+    }
 
-    // Card tilt effect on mouse move
+    // ---- Scroll Reveal ----
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.07 });
+    document.querySelectorAll('.section').forEach(s => io.observe(s));
+
+    // ---- 3D Card Tilt ----
     document.querySelectorAll('.card').forEach(card => {
       card.addEventListener('mousemove', e => {
         const r = card.getBoundingClientRect();
-        const x = ((e.clientX - r.left) / r.width - 0.5) * 14;
-        const y = ((e.clientY - r.top) / r.height - 0.5) * -14;
-        card.style.transform = `perspective(600px) rotateY(${x}deg) rotateX(${y}deg) translateY(-10px) scale(1.04)`;
+        const x = ((e.clientX - r.left) / r.width  - 0.5) * 16;
+        const y = ((e.clientY - r.top)  / r.height - 0.5) * -16;
+        card.style.transform = `perspective(700px) rotateY(${x}deg) rotateX(${y}deg) translateY(-12px) scale(1.05)`;
       });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-      });
+      card.addEventListener('mouseleave', () => card.style.transform = '');
     });
   </script>
-
 </body>
 </html>
