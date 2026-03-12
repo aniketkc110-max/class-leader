@@ -401,6 +401,121 @@ body {
   padding: 0 2px;
 }
 
+/* ---- PURPOSE SECTION ---- */
+.purpose-section {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #1a0533 0%, #2a1a6e 50%, #0d4a3a 100%);
+  padding: 80px 24px 90px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.purpose-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='40' cy='40' r='5' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.purpose-inner { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; }
+
+.purpose-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.9);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  border-radius: 100px;
+  margin-bottom: 18px;
+}
+
+.purpose-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: #fff;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #fff, #c4b5fd, #fbcfe8, #fff);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmerText 4s linear infinite;
+}
+
+.purpose-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.7);
+  max-width: 580px;
+  margin: 0 auto 48px;
+  line-height: 1.75;
+}
+
+.purpose-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+.pur-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 28px;
+  padding: 40px 28px 36px;
+  width: 300px;
+  text-align: center;
+  transition: transform var(--spring), box-shadow var(--ease), background var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+
+.pur-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--pc);
+  border-radius: 4px 4px 0 0;
+  opacity: 0.9;
+}
+
+.pur-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  background: rgba(255,255,255,0.14);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.3), 0 0 0 1px color-mix(in srgb, var(--pc) 50%, transparent);
+}
+
+.pur-icon {
+  font-size: 3.2rem;
+  margin-bottom: 18px;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+  transition: transform var(--spring);
+}
+.pur-card:hover .pur-icon { transform: scale(1.2) rotate(-8deg); }
+
+.pur-card h3 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.35rem;
+  color: #fff;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+}
+
+.pur-card p {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.7;
+}
+
 /* ---- 11. FOOTER ---- */
 .footer {
   position: relative;
